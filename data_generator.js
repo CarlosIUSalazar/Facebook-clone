@@ -44,7 +44,11 @@
 
 
   const generatePostObj = () => {
+    //let now = moment();
+    //now = now.fromNow();
     timestamp = new Date();
+    //console.log(moment("20111031", "YYYYMMDD").fromNow())
+    //timestamp = moment("20111031", "YYYYMMDD").fromNow();
 
     return {
       friend: getRandomElement(friends),
@@ -52,6 +56,7 @@
       feeling: getRandomElement(feelings),
       image: getRandomElement(images),
       timestamp: timestamp,
+      //timestamp: moment().format(),
     };
   };
 
@@ -76,6 +81,8 @@
   const scheduler = () => {
     createPost();
     setTimeout(scheduler, Math.random() * 1000);
+    //setTimeout(scheduler,1000);
   };
 
+  //scheduler();
 })();

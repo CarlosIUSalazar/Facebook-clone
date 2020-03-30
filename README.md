@@ -53,4 +53,3 @@ Begin by opening `index.html` in Chrome to verify that you can see 👀 the post
 
 - [ ] Make this look as close as possible to the real Facebook newsfeed.
 # carlosiusalazar-gmail.com
-# Facebook-clone

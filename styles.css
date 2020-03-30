@@ -9,13 +9,6 @@ body {
     background-color: rgb(233,235,238);
 }
 
-.coverImage {
-    position:absolute;
-    z-index: -1;
-    height: 2000px;
-    width: 1000px;
-}
-
 .profile{
     background-color: lightgray;
     width:175px;

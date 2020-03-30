@@ -1,6 +1,6 @@
 window.onload = () => {
 	// this is a very simple check to see if there's a username stored
-	if (localStorage.getItem('username') === 'null') {
+//	if (localStorage.getItem('username') === 'null') {
 	// prompt for one from user if not
 
 	window.username = window.prompt('What is your name?');
@@ -8,12 +8,15 @@ window.onload = () => {
 	//window.username = 'Carlos Salazar';
 
 	localStorage.setItem('username', username);
-	 } else {
-	 	window.username = localStorage.getItem('username');
-	 }
+//	 } 
+	 
+	//  else {
+	//  	window.username = localStorage.getItem('username');
+	//  }
 
 	document.getElementById('userName').innerText = username;
-
+	// console.log(username);
+	// console.log(moment().startOf('hour').fromNow())
 
 	const containerEl = document.querySelector('#newsfeed');
 
@@ -52,21 +55,38 @@ window.onload = () => {
 		const postEl = document.createElement('div');
 
 		postEl.className = 'userPost';
+		//actual post and hashtag
+		//postEl.innerText = post.text;
 
 		//friend name
-
+		//postEl.append(friendEl);
+		//containerEl.append(friendEl);
+		//containerEl.prepend(friendEl);
+		//containerEl.insertAdjacentElement('afterend',friendEl);
 		postEl.append(friendEl);
 
 		//appends post time
+		//containerEl.prepend(postTime);
+		//containerEl.append(postTime);
 		postEl.append(postTime);
 
 		//Appends actual post text
 		postEl.append(post.text);
 
+		//actual post and ahshtag
+		//containerEl.prepend(postEl);
+		//containerEl.append(postEl);
+
+		// containerEl.insertAdjacentElement('afterend',postEl);
+
 		//appends feelings
+		//containerEl.prepend(feelingPost);
+		//containerEl.append(feelingPost);
 		postEl.append(feelingPost);
 
 		//appends post Image
+		//containerEl.prepend(postImage);
+		//containerEl.append(postImage);
 		postEl.append(postImage);
 
 		containerEl.prepend(postEl);
