@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carlos Salazar Bacefook Newsfeed</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="coverImage">
+    <img src="img/coverOrig.jpg" height="420" width="420">
+  </div>
+  <div class="header">
+  <h1>bacefook Newsfeed </h1>
+  </div>
+  
+  <div class="profile"> 
+    <div class="profilePhotoContainer">
+      <img class="profilePhoto" src="img/me.png">
+      <div id="userName"></div>
+    </div>
+
+  </div>
+
+  <div class="myPostArea">
+    <div>
+      <textarea id="myTextArea" placeholder="What's on your mind?"></textarea>
+    </div>
+    
+
+    <div class="box">
+      <select id="selectedFeeling">
+        <option value="">I'm Feeling:</option>
+        <option value="Feeling Happy 😄">Happy 😄</option>
+        <option value="Feeling Smug 😏">Smug 😏</option>
+        <option value="Feeling Lovestruck 🥰">Lovestruck 🥰</option>
+        <option value="Feeling Gross 🤢">Gross 🤢</option>
+        <option value="Feeling Scared 😰">Scared 😰</option>
+        <option value="Feeling Shitty 💩">Shitty 💩</option>
+        <option value="Feeling Angry 😡">Angry 😡</option>
+        <option value="Feeling Frustrated 😫">Frustrated 😫</option>
+        <option value="Feeling Excited 🤩">Excited 🤩</option>
+      </select>
+    </div>
+
+    <div class="photoUploadButtonDiv">
+      <button id="photoUploadButton" type="button" onclick="uploadPhoto()">📷 Add Image</button> 
+    </div>
+
+    <div class="postButtonDiv">
+      <button class="postButton" type="button" onclick="postingMyPost()">Post</button> 
+    </div>
+  </div>
+  
+  <div id="newsfeed">
+
+  </div>
+
+  <script src="data_generator.js"></script>
+  <script src="app.js"></script>
+  <script src="moment.js"></script>
+</body>
+</html>
